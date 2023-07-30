@@ -144,8 +144,18 @@ header nav ul {
     border-radius: 0.3em;
 }
 
+.course_items {
+    gap: 2em;
+}
 
-/* quote section */
+.course_items li {
+    max-width: 20em;
+    height: 24em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 .quote {
     padding: 5em 22%;
