@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub - CSS project</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html" class="header_logo">LearnHub</a>
+        <nav>
+            <ul>
+                <li><a href="../pages/courses.html" class="secondary_text nav_link">Courses</a></li>
+                <li><a href="../pages/instructors.html" class="secondary_text nav_link">Instructors</a></li>
+                <li><a href="../pages/signup.html" class="secondary_text nav_link">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div>
+                <h1>Start learning now! 🚀</h1>
+                <p class="secondary_text">Embark on a journey of lifelong learning and personal 
+                    growth with LearnHub's wide range of engaging online courses
+                </p>
+                <ul>
+                    <li>✅ Diverse course selection</li>
+                    <li>✅ Expert instructors</li>
+                    <li>✅ Flexible, self-paced learning</li>
+                    <li>✅ Interactive learning platform</li>
+                    <li>✅ Accessible anytime, anywhere</li>
+                </ul>
+            </div>
+            <div class="hero_form_container">
+                <form action="#">
+                    <h2>Join us!</h2>
+                    <fieldset> 
+                        <label for="username">Username</label>
+                        <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        required />
+                    </fieldset>
+                    <fieldset> 
+                        <label for="email">Email</label>
+                        <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required />
+                    </fieldset>
+                    <fieldset>
+                        <label for="pswd">Password</label>
+                        <input
+                        type="password"
+                        id="pswd"
+                        name="password"
+                        minlength="8"
+                        required
+                        />
+                    </fieldset>
+                    <fieldset class="fieldset_checkbox">
+                        <input type="checkbox" id="register" name="register">
+                        <label for="register"> I accept <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Sign Up" class="cta">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy;</p>
+    </footer>
+</body>
+</html>
